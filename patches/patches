@@ -7,3 +7,5 @@ Applied:
 * blinking cursor
 * scrolling
 * bold patch
+* delete key
+* w3m hack
