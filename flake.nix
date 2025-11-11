@@ -25,6 +25,7 @@
             src = self;
 
             buildInputs = with pkgs; [
+              pkg-config
               xorg.libX11
               xorg.libXft
               fontconfig
