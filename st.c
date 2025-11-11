@@ -17,7 +17,7 @@
 #include <unistd.h>
 #include <wchar.h>
 
-#include "boxdraw.h"
+#include "boxdraw.c"
 #include "st.h"
 #include "win.h"
 
