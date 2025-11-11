@@ -25,8 +25,8 @@
             src = self;
 
             buildInputs = with pkgs; [
-              libX11
-              libXft
+              xorg.libX11
+              xorg.libXft
               fontconfig
               harfbuzz
             ];
