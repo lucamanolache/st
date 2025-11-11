@@ -30,9 +30,18 @@
               xorg.libXft
               fontconfig
               harfbuzz
+              ncurses
             ];
 
             installPhase = ''
+              # Create the terminfo directory inside the $out path
+              mkdir -p $out/share/terminfo
+              
+              # Set this env var so 'tic' (called by 'make install')
+              # writes to the correct directory instead of $HOME
+              export TERMINFO=$out/share/terminfo
+              
+              # Now run the original install command
               make install PREFIX=$out
             '';
           };
